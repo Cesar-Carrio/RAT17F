@@ -1,0 +1,19 @@
+This test case shows that the program will provide a error message 
+for using a undeclared ID "notDeclaredID" 
+
+==========================================================
+   %%
+    integer   i, max, sum;
+	
+
+    notDeclaredID := 0;
+    i := 1;
+    read (max);
+    while (i <  max)  {
+          sum := sum + i;
+          i  := i + 1;
+     }
+     write (sum+max);
+==========================OUTPUT====================================
+The actuall error message is outputted to "symbolTable.txt" so after you run
+the .exe check that file and it will have the error message.

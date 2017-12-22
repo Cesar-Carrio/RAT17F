@@ -1,0 +1,7 @@
+Identifer		Memory Location		Type
+max				10000				integer
+i				10001				integer
+
+Listing of Identifiers:
+->max
+->i

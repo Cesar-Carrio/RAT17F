@@ -1,0 +1,3 @@
+/Users/zar/CLionProjects/323Compiler/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zar/CLionProjects/323Compiler/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zar/CLionProjects/323Compiler/cmake-build-debug/CMakeFiles/323Compiler.dir

@@ -1,0 +1,215 @@
+Token: Separator		Lexeme: %%
+<RAT17F>-><OFD>%%<ODL><SL>
+Token: Separator		Lexeme: %%
+<OFD>-><FD>|<Empty>
+Token: Separator		Lexeme: %%
+<FD>-><F><FDPrime>
+Token: Separator		Lexeme: %%
+<F> -> @ <Identifier> (<OPL>) <ODL> <body>
+Token: Separator		Lexeme: %%
+<Empty> -> epsilon
+Token: Keyword		Lexeme: integer
+<ODL>-> <DL> | <Empty>
+Token: Keyword		Lexeme: integer
+<DL> -> <D> ; <DLPrime>
+Token: Keyword		Lexeme: integer
+<D> -> <Q><IDS>
+Token: Keyword		Lexeme: integer
+<Q> -> integer | boolean | floating
+Token: Keyword		Lexeme: integer
+Token: Identifier		Lexeme: max
+<IDS> -> <Identifier><IDSPrime>
+Token: Identifier		Lexeme: max
+Token: Separator		Lexeme: ,
+<IDSPrime> -> ,<IDS>|<Empty>
+Token: Separator		Lexeme: ,
+Token: Identifier		Lexeme: i
+<IDS> -> <Identifier><IDSPrime>
+Token: Identifier		Lexeme: i
+Token: Separator		Lexeme: ;
+<IDSPrime> -> ,<IDS>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+Token: Identifier		Lexeme: i
+<DLP> -> <DL> | <Empty>
+Token: Identifier		Lexeme: i
+<DL> -> <D> ; <DLPrime>
+Token: Identifier		Lexeme: i
+<D> -> <Q><IDS>
+Token: Identifier		Lexeme: i
+<Q> -> integer | boolean | floating
+Token: Identifier		Lexeme: i
+<Empty> -> epsilon
+Token: Identifier		Lexeme: i
+<SL> -> <S><SL_Prime>
+Token: Identifier		Lexeme: i
+<S> -> <Comp> | <Assign> | <If> | <Return> | <Write> | <Read> | <While>
+Token: Identifier		Lexeme: i
+<compound> -> {<SL>}
+Token: Identifier		Lexeme: i
+<Assign> -> <Identifier> := <Expr>;
+Token: Identifier		Lexeme: i
+Token: Operator		Lexeme: :=
+Token: Integer		Lexeme: 4
+<expr> -> <T><expr_Prime>
+Token: Integer		Lexeme: 4
+<term> -> <factor><term_Prime>
+Token: Integer		Lexeme: 4
+<factor> -> - <primary> |<primary>
+Token: Integer		Lexeme: 4
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Integer		Lexeme: 4
+Token: Separator		Lexeme: ;
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+Token: Identifier		Lexeme: max
+<SLP> -> <SL> | <Empty>
+Token: Identifier		Lexeme: max
+<SL> -> <S><SL_Prime>
+Token: Identifier		Lexeme: max
+<S> -> <Comp> | <Assign> | <If> | <Return> | <Write> | <Read> | <While>
+Token: Identifier		Lexeme: max
+<compound> -> {<SL>}
+Token: Identifier		Lexeme: max
+<Assign> -> <Identifier> := <Expr>;
+Token: Identifier		Lexeme: max
+Token: Operator		Lexeme: :=
+Token: Integer		Lexeme: 10
+<expr> -> <T><expr_Prime>
+Token: Integer		Lexeme: 10
+<term> -> <factor><term_Prime>
+Token: Integer		Lexeme: 10
+<factor> -> - <primary> |<primary>
+Token: Integer		Lexeme: 10
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Integer		Lexeme: 10
+Token: Separator		Lexeme: ;
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+Token: Keyword		Lexeme: while
+<SLP> -> <SL> | <Empty>
+Token: Keyword		Lexeme: while
+<SL> -> <S><SL_Prime>
+Token: Keyword		Lexeme: while
+<S> -> <Comp> | <Assign> | <If> | <Return> | <Write> | <Read> | <While>
+Token: Keyword		Lexeme: while
+<compound> -> {<SL>}
+Token: Keyword		Lexeme: while
+<Assign> -> <Identifier> := <Expr>;
+Token: Keyword		Lexeme: while
+<if> -> if (<Condition>)<S><IfPrime>
+Token: Keyword		Lexeme: while
+<return_nonTerm> -> return<return_nonTerm_prime>
+Token: Keyword		Lexeme: while
+<Write> -> write(<expr>);
+Token: Keyword		Lexeme: while
+<Read> -> read(<IDS>);
+Token: Keyword		Lexeme: while
+<While> -> while(<Condition>)<S>
+Token: Keyword		Lexeme: while
+Token: Separator		Lexeme: (
+Token: Identifier		Lexeme: i
+<condition> -> <expr><relop><expr>
+Token: Identifier		Lexeme: i
+<expr> -> <T><expr_Prime>
+Token: Identifier		Lexeme: i
+<term> -> <factor><term_Prime>
+Token: Identifier		Lexeme: i
+<factor> -> - <primary> |<primary>
+Token: Identifier		Lexeme: i
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Identifier		Lexeme: i
+Token: Operator		Lexeme: <
+<primary_prime> -> [<IDS>] | <Empty>
+Token: Operator		Lexeme: <
+<Empty> -> epsilon
+Token: Operator		Lexeme: <
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Operator		Lexeme: <
+<Empty> -> epsilon
+Token: Operator		Lexeme: <
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Operator		Lexeme: <
+<Empty> -> epsilon
+Token: Operator		Lexeme: <
+<relop> -> =|/=|>|<|=>|<=
+Token: Operator		Lexeme: <
+Token: Identifier		Lexeme: max
+<expr> -> <T><expr_Prime>
+Token: Identifier		Lexeme: max
+<term> -> <factor><term_Prime>
+Token: Identifier		Lexeme: max
+<factor> -> - <primary> |<primary>
+Token: Identifier		Lexeme: max
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Identifier		Lexeme: max
+Token: Separator		Lexeme: )
+<primary_prime> -> [<IDS>] | <Empty>
+Token: Separator		Lexeme: )
+<Empty> -> epsilon
+Token: Separator		Lexeme: )
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Separator		Lexeme: )
+<Empty> -> epsilon
+Token: Separator		Lexeme: )
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Separator		Lexeme: )
+<Empty> -> epsilon
+Token: Separator		Lexeme: )
+Token: Identifier		Lexeme: i
+<S> -> <Comp> | <Assign> | <If> | <Return> | <Write> | <Read> | <While>
+Token: Identifier		Lexeme: i
+<compound> -> {<SL>}
+Token: Identifier		Lexeme: i
+<Assign> -> <Identifier> := <Expr>;
+Token: Identifier		Lexeme: i
+Token: Operator		Lexeme: :=
+Token: Identifier		Lexeme: i
+<expr> -> <T><expr_Prime>
+Token: Identifier		Lexeme: i
+<term> -> <factor><term_Prime>
+Token: Identifier		Lexeme: i
+<factor> -> - <primary> |<primary>
+Token: Identifier		Lexeme: i
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Identifier		Lexeme: i
+Token: Operator		Lexeme: +
+<primary_prime> -> [<IDS>] | <Empty>
+Token: Operator		Lexeme: +
+<Empty> -> epsilon
+Token: Operator		Lexeme: +
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Operator		Lexeme: +
+<Empty> -> epsilon
+Token: Operator		Lexeme: +
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Operator		Lexeme: +
+Token: Integer		Lexeme: 1
+<term> -> <factor><term_Prime>
+Token: Integer		Lexeme: 1
+<factor> -> - <primary> |<primary>
+Token: Integer		Lexeme: 1
+<primary> -> <Identifier><primary_prime> | <integer> | (<expr>) | <floating> | true | false
+Token: Integer		Lexeme: 1
+Token: Separator		Lexeme: ;
+<term_Prime> -> *<F><term_Prime> |/<F><term_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;
+<expr_Prime> -> +<T><expr_Prime>|-<T><expr_Prime>|<Empty>
+Token: Separator		Lexeme: ;
+<Empty> -> epsilon
+Token: Separator		Lexeme: ;

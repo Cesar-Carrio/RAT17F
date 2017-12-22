@@ -1,0 +1,5 @@
+%%
+integer max, i;
+i := 4;
+max := 10;
+while ( i < max)  i := i  + 1;
