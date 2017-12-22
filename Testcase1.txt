@@ -1,0 +1,19 @@
+This test will have no errors.
+=======================================================================
+   %%
+    integer   i, max, sum;
+	
+
+    max := 0;
+    i := 1;
+    read (max);
+    while (i <  max)  {
+          sum := sum + i;
+          i  := i + 1;
+     }
+     write (sum+max);
+
+
+
+========================================output============================
+*****The output is located in the both "symbolTable.txt" and "instructionTable.txt"
